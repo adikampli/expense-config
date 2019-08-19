@@ -3,28 +3,28 @@ server:
 eureka:
    client:
       serviceUrl:
-         defaultZone: http://expense_eureka:8761/eureka
+         defaultZone: http://expense-eureka:8761/eureka
 zuul:
    ignoredServices: '*'
    routes:
       order:
          path: /order/**
-         serviceId: expense_order
+         serviceId: expense-order
          stripPrefix: false
          sensitive-headers: 
       product:
          path: /product/**
-         serviceId: expense_product
+         serviceId: expense-product
          stripPrefix: false
          sensitive-headers: 
       store:
          path: /store/**
-         serviceId: expense_store
+         serviceId: expense-store
          stripPrefix: false
          sensitive-headers: 
       oauth:
          path: /uaa/**
-         serviceId: expense_auth
+         serviceId: expense-auth
          sensitive-headers: 
 logging:
    level:
