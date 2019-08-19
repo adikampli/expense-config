@@ -19,7 +19,7 @@ zuul:
          sensitive-headers: 
       store:
          path: /store/**
-         serviceId: expense_stores
+         serviceId: expense_store
          stripPrefix: false
          sensitive-headers: 
       oauth:
