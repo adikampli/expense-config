@@ -2,7 +2,7 @@ server:
    port: 9761
 eureka:
    client:
-      fetch-registry: true
+      fetchRegistry: true
       serviceUrl:
          defaultZone: http://expense-eureka:8761/eureka
 ribbon:
